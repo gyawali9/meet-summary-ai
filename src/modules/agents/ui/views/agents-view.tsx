@@ -19,19 +19,9 @@ export function AgentsView() {
 }
 
 export const AgentsViewLoading = () => {
-  return (
-    <LoadingState
-      title="Loading Agents"
-      description="This may take a few seconds"
-    />
-  );
+  return <LoadingState title="Loading Agents" description="This may take a few seconds" />;
 };
 
 export const AgentsViewError = () => {
-  return (
-    <ErrorState
-      title="Error Loading Agents"
-      description="Something went wrong"
-    />
-  );
+  return <ErrorState title="Error Loading Agents" description="Something went wrong" />;
 };

@@ -28,11 +28,7 @@ export function DashboardNavbar() {
 
       <nav className="flex px-4 gap-x-2 items-center py-3 border-b bg-background">
         <Button onClick={toggleSidebar} className="size-9" variant={"outline"}>
-          {state === "collapsed" || isMobile ? (
-            <PanelLeftIcon size={4} />
-          ) : (
-            <PanelLeftCloseIcon />
-          )}
+          {state === "collapsed" || isMobile ? <PanelLeftIcon size={4} /> : <PanelLeftCloseIcon />}
         </Button>
         <Button
           className="h-9 w-[240px] justify-start font-normal text-muted-foreground hover:text-muted-foreground"
